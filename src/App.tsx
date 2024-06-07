@@ -1,15 +1,11 @@
 import React from 'react';
-import { useRoutes } from 'react-router-dom';
-import routes from './routes';
-import { Link } from 'react-router-dom';
+import Router from './Router';
 
 const App: React.FC = () => {
-  const routing = useRoutes(routes);
   return (
     <div>
-      <Link to='/'>home</Link>
-      <Link to='/about'>about</Link>
-      {routing}
+      <h1>My Vite React App</h1>
+      <Router />
     </div>
   );
 };
