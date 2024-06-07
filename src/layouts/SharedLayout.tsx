@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 
 interface LayoutProps {
@@ -10,6 +11,8 @@ const SharedLayout: React.FC<LayoutProps> = ({ children }) => {
     <div>
       {/* Add shared layout components like headers, footers, etc. */}
       <header>Shared Header</header>
+      <Link to='/'>home</Link>
+      <Link to='/about'>about</Link>
 
       {/* Render child routes */}
       <main>
