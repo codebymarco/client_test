@@ -1,13 +1,15 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { useRoutes } from 'react-router-dom';
+import routes from './routes';
 
 const App: React.FC = () => {
+  const routing = useRoutes(routes);
   return (
     <div>
       <h1>My Vite React App</h1>
-      <Outlet />
+      {routing}
     </div>
   );
-}
+};
 
 export default App;
