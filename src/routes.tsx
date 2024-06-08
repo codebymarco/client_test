@@ -2,6 +2,7 @@ import { Route, RouteObject } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import SharedLayout from "./layouts/SharedLayout";
+import SharedLayout2 from "./layouts/SharedLayout2";
 
 const routes: RouteObject[] = [
   {
@@ -16,10 +17,10 @@ const routes: RouteObject[] = [
   {
     path: "/about",
     element: (
-      <SharedLayout>
+      <SharedLayout2>
         {/* Use SharedLayout as the layout */}
         <Route index element={<About />} />
-      </SharedLayout>
+      </SharedLayout2>
     ),
   },
 ];

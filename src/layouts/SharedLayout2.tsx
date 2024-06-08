@@ -1,18 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Routes } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
-const SharedLayout: React.FC<LayoutProps> = ({ children }) => {
+const SharedLayout2: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div>
       {/* Add shared layout components like headers, footers, etc. */}
-      <header>Shared laout 1</header>
-      <Link to="/">home</Link>
-      <Link to="/about">about</Link>
+      <header>Shared laout 2</header>
+      <Link to='/'>home</Link>
+      <Link to='/about'>about</Link>
 
       {/* Render child routes */}
       <main>
@@ -25,4 +25,4 @@ const SharedLayout: React.FC<LayoutProps> = ({ children }) => {
   );
 };
 
-export default SharedLayout;
+export default SharedLayout2;
