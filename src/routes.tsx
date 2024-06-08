@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import SharedLayout from "./layouts/SharedLayout";
 import SharedLayout2 from "./layouts/SharedLayout2";
+import Console from "./components/Console";
 
 const routes: RouteObject[] = [
   {
@@ -18,9 +19,18 @@ const routes: RouteObject[] = [
     path: "/about",
     element: (
       <SharedLayout2>
-        {/* Use SharedLayout as the layout */}
+        {/* Use SharedLayout2 as the layout */}
         <Route index element={<About />} />
       </SharedLayout2>
+    ),
+  },
+  {
+    path: "/console/:userid",
+    element: (
+      <SharedLayout>
+        {/* Use SharedLayout as the layout */}
+        <Route index element={<Console />} />
+      </SharedLayout>
     ),
   },
 ];

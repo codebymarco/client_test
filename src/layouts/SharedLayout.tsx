@@ -13,6 +13,7 @@ const SharedLayout: React.FC<LayoutProps> = ({ children }) => {
       <header>Shared laout 1</header>
       <Link to="/">home</Link>
       <Link to="/about">about</Link>
+      <Link to="/console/aukjwg;k">dymuic route</Link>
 
       {/* Render child routes */}
       <main>
